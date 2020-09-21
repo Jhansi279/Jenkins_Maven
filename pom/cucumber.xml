@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="249.498">
+    <testcase classname="Login features" name="Login with different user" time="91.232">
+        <failure message="Invalid Login expected:&lt;Welcome [Britney]&gt; but was:&lt;Welcome [Linda]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given I am able to navigate onto the login page.............................passed
+When I enter the username as "Admin"........................................passed
+And I enter the password as "admin123"......................................passed
+And I click on the login button.............................................passed
+Then I should see the user name as "Welcome Linda"..........................failed
+
+StackTrace:
+org.junit.ComparisonFailure: Invalid Login expected:<Welcome [Britney]> but was:<Welcome [Linda]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at stepDefinitions.Steps.i_should_see_the_user_name_as(Steps.java:48)
+	at ✽.I should see the user name as "Welcome Linda"(file:///C:/SE-United/WP/pom/src/test/resources/Login/login.feature:33)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login features" name="Login with different user 2" time="84.731">
+        <failure message="Invalid Login expected:&lt;Welcome [Britney]&gt; but was:&lt;Welcome [Linda]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given I am able to navigate onto the login page.............................passed
+When I enter the username as "linda.anderson"...............................passed
+And I enter the password as "linda.anderson"................................passed
+And I click on the login button.............................................passed
+Then I should see the user name as "Welcome Linda"..........................failed
+
+StackTrace:
+org.junit.ComparisonFailure: Invalid Login expected:<Welcome [Britney]> but was:<Welcome [Linda]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at stepDefinitions.Steps.i_should_see_the_user_name_as(Steps.java:48)
+	at ✽.I should see the user name as "Welcome Linda"(file:///C:/SE-United/WP/pom/src/test/resources/Login/login.feature:33)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login features" name="Login with Negative data" time="73.131">
+        <system-out>
+            <![CDATA[Given I am able to navigate onto the login page.............................passed
+When I enter the username as "sneha"........................................passed
+And I enter the password as "sneha".........................................passed
+And I click on the login button.............................................passed
+Then I should see an error message as "Invalid Credentials".................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
