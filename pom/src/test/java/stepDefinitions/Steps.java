@@ -1,3 +1,4 @@
+//This is Step Definition class
 package stepDefinitions;
 
 import org.junit.Assert;
