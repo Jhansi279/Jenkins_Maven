@@ -13,5 +13,5 @@ plugin = {"html:testoutput.html", "json:json_output/cucumber.json","junit:cucumb
 		)
 
 public class Test_runner {
-
+//This is runner class for cucumber
 }
